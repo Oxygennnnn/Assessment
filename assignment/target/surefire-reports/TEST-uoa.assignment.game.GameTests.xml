@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="uoa.assignment.character.CharacterTests" time="0.033" tests="9" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="uoa.assignment.game.GameTests" time="2.092" tests="16" errors="0" skipped="0" failures="0">
   <properties>
     <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
     <property name="java.specification.version" value="11"/>
@@ -56,13 +56,20 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="checkMonsterClassFailedfulAttack" classname="uoa.assignment.character.CharacterTests" time="0"/>
-  <testcase name="checkIfMonsterDecidesRandomly" classname="uoa.assignment.character.CharacterTests" time="0.008"/>
-  <testcase name="checkHealthFunctionality" classname="uoa.assignment.character.CharacterTests" time="0.001"/>
-  <testcase name="checkIfPlayerDefenceLooksRandom" classname="uoa.assignment.character.CharacterTests" time="0.011"/>
-  <testcase name="checkIfMonsterDefenceLooksRandom" classname="uoa.assignment.character.CharacterTests" time="0.011"/>
-  <testcase name="checkPlayerClassSuccesfulAttack" classname="uoa.assignment.character.CharacterTests" time="0"/>
-  <testcase name="checkMonsterClassSuccesfulAttack" classname="uoa.assignment.character.CharacterTests" time="0.001"/>
-  <testcase name="checkSayName" classname="uoa.assignment.character.CharacterTests" time="0"/>
-  <testcase name="checkPlayerClassFailedfulAttack" classname="uoa.assignment.character.CharacterTests" time="0.001"/>
+  <testcase name="checkMarkingKilledMonster" classname="uoa.assignment.game.GameTests" time="0.019"/>
+  <testcase name="checkMoveCharacterFull" classname="uoa.assignment.game.GameTests" time="0"/>
+  <testcase name="checkEndGame" classname="uoa.assignment.game.GameTests" time="0.008"/>
+  <testcase name="checkCharactersArray" classname="uoa.assignment.game.GameTests" time="0"/>
+  <testcase name="checkPlayerAndMonsterPositionInLayout" classname="uoa.assignment.game.GameTests" time="0.001"/>
+  <testcase name="checkLayoutInitialization" classname="uoa.assignment.game.GameTests" time="0"/>
+  <testcase name="checkHealthInformationPrinted" classname="uoa.assignment.game.GameTests" time="0.005"/>
+  <testcase name="checkMoveCharacter" classname="uoa.assignment.game.GameTests" time="0.006"/>
+  <testcase name="checkMoveToOccupiedField" classname="uoa.assignment.game.GameTests" time="0"/>
+  <testcase name="checkRunGameMain" classname="uoa.assignment.game.GameTests" time="1.001"/>
+  <testcase name="checkPlayerAndMonsterPosition" classname="uoa.assignment.game.GameTests" time="0"/>
+  <testcase name="checkKillingPlayer" classname="uoa.assignment.game.GameTests" time="0.005"/>
+  <testcase name="checkRunGameMainWithUserInput" classname="uoa.assignment.game.GameTests" time="0.999"/>
+  <testcase name="checkMoveOfPlayers" classname="uoa.assignment.game.GameTests" time="0.004"/>
+  <testcase name="checkKillingMonster" classname="uoa.assignment.game.GameTests" time="0.002"/>
+  <testcase name="checkMoveIntoWall" classname="uoa.assignment.game.GameTests" time="0.001"/>
 </testsuite>

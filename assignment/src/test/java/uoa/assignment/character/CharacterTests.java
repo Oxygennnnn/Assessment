@@ -41,7 +41,7 @@ public class CharacterTests
     /**
      * Task 1.2
      */
-    /*@Test
+    @Test
     public void checkSayName()
     {
        class TestImplementation extends GameCharacter {
@@ -58,12 +58,12 @@ public class CharacterTests
     } catch (Exception | Error e) {
         fail(ANSI_WHITE_BACKGROUND +ANSI_BLACK+"Make sure the constructor of GameCharacter class is modified and sayName() method exist as per T1.2 "+ ANSI_RESET+ e);
     }
-    }*/
+    }
     
     /**
      * Task 1.3
      */
-    /*@Test
+    @Test
     public void checkHealthFunctionality()
     {
        class TestImplementation extends GameCharacter {
@@ -85,12 +85,12 @@ public class CharacterTests
     } catch (Exception | Error e) {
         fail(ANSI_WHITE_BACKGROUND +ANSI_BLACK+"Make sure the class GameCharacter contains methods getHealth()and setHealth() as per T1.3 "+ ANSI_RESET+ e);
     }
-    }*/
+    }
     
     /**
      * Task 1.4 a)
      */
-    /*@Test
+    @Test
     public void checkMonsterClassSuccesfulAttack()
     {
        class TestImplementation extends GameCharacter {
@@ -118,12 +118,12 @@ public class CharacterTests
     } catch (Exception | Error e) {
         fail(ANSI_WHITE_BACKGROUND +ANSI_BLACK+"Make sure the class Monster implements method hurtCharacter() as per T1.4 and all previous tasks have been completed."+ ANSI_RESET+ e);
     }
-    }*/
+    }
     
     /**
      * Task 1.4 b)
      */
-    /*@Test
+    @Test
     public void checkMonsterClassFailedfulAttack()
     {
        class TestImplementation extends GameCharacter {
@@ -151,12 +151,12 @@ public class CharacterTests
     } catch (Exception | Error e) {
         fail(ANSI_WHITE_BACKGROUND +ANSI_BLACK+"Make sure the class Monster implements method hurtCharacter() as per T1.4 and all previous tasks have been completed."+ ANSI_RESET+ e);
     }
-    }*/
+    }
     
     /**
      * Task 1.4 c)
      */
-    /*@Test
+    @Test
     public void checkIfMonsterDefenceLooksRandom()
     {
        
@@ -183,12 +183,12 @@ public class CharacterTests
     } catch (Exception | Error e) {
         fail(ANSI_WHITE_BACKGROUND +ANSI_BLACK+"Make sure the class Monster implements method hurtCharacter() as per T1.4 and all previous tasks have been completed."+ ANSI_RESET+ e);
     }
-    }*/
+    }
     
     /**
      * Task 1.5 a)
      */
-    /*@Test
+    @Test
     public void checkPlayerClassSuccesfulAttack()
     {
        class TestImplementation extends GameCharacter {
@@ -216,12 +216,12 @@ public class CharacterTests
     } catch (Exception | Error e) {
         fail(ANSI_WHITE_BACKGROUND +ANSI_BLACK+"Make sure the class Monster implements method hurtCharacter() as per T1.4 and all previous tasks have been completed."+ ANSI_RESET+ e);
     }
-    }*/
+    }
     
     /**
      * Task 1.4 b)
      */
-    /*@Test
+    @Test
     public void checkPlayerClassFailedfulAttack()
     {
        class TestImplementation extends GameCharacter {
@@ -249,12 +249,12 @@ public class CharacterTests
     } catch (Exception | Error e) {
         fail(ANSI_WHITE_BACKGROUND +ANSI_BLACK+"Make sure the class Monster implements method hurtCharacter() as per T1.4 and all previous tasks have been completed."+ ANSI_RESET+ e);
     }
-    }*/
+    }
     
     /**
      * Task 1.4 c)
      */
-    /*@Test
+    @Test
     public void checkIfPlayerDefenceLooksRandom()
     {
        
@@ -281,7 +281,7 @@ public class CharacterTests
     } catch (Exception | Error e) {
         fail(ANSI_WHITE_BACKGROUND +ANSI_BLACK+"Make sure the class Monster implements method hurtCharacter() as per T1.4 and all previous tasks have been completed."+ ANSI_RESET+ e);
     }
-    }*/
+    }
     
     
      
@@ -291,7 +291,7 @@ public class CharacterTests
     /**
      * Task 4.2
      */
-    /*@Test
+    @Test
     public void checkIfMonsterDecidesRandomly()
     {
        
@@ -324,6 +324,6 @@ public class CharacterTests
     } catch (Exception | Error e) {
         fail(ANSI_WHITE_BACKGROUND +ANSI_BLACK+"Make sure the class Monster contains a method decideMove() as per T4.2 and all previous tasks have been completed."+ ANSI_RESET+ e);
     }
-    }*/
+    }
     
 }

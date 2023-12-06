@@ -8,16 +8,27 @@ public class Player extends GameCharacter{
 		super(name);
 	}
 
-	
+	@Override
 	public
 	void hurtCharacter(GameCharacter character) {
-		
+		boolean defencesuccessfully=character.successfulDefense();
+        if (!defencesuccessfully){
+            int currentHealth=character.getHealth();
+            character.setHealth(currentHealth-50);
+        }else{
+            return;
+        }
 	}
 
-	
+	@Override
 	public
 	boolean successfulDefense() {
-		return true;
-	}
-
+        Random random=new Random();
+        int randomInt=random.nextInt(10);
+        if(randomInt<=2){
+			return true;
+		}else{
+			return false;
+		}
+    }
 }
