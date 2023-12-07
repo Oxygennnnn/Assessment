@@ -9,8 +9,10 @@ public class Monster extends GameCharacter {
 	}
 
     @Override
+    // Overrides the abstract method in GameCharacter class
 	public void hurtCharacter(GameCharacter character) {
         boolean defendsuccessfully=character.successfulDefense();
+        //Defines the fails and damage were done to the character
         if (!defendsuccessfully){
             int currentHealth=character.getHealth();
             character.setHealth(currentHealth-20);
@@ -20,8 +22,10 @@ public class Monster extends GameCharacter {
 	}
 
 	@Override
+    // Overrides the successfulDefense() method
 	public boolean successfulDefense() {
 		Random random=new Random();
+        //Randomly generate an integer ranging from 0 to 1. Each of them has 50% chance to be picked.
         int randomInt=random.nextInt(2);
 		if(randomInt==0) {
 			return true;
@@ -31,10 +35,12 @@ public class Monster extends GameCharacter {
 	}
 
 
-	
+	// Method to decide the monster's move
 	public String decideMove () {
 		Random random=new Random();
+        //Randomly generate an integer ranging from 0 to 3. Each of them has 25% chance to be picked.
         int randomInt=random.nextInt(4);
+        //Decides the directions to move according to the random integers
         if(randomInt==0){
             return "up";
         }else if(randomInt==1){

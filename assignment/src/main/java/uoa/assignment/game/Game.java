@@ -21,7 +21,7 @@ public class Game {
     public boolean nextRound (String input) {
         
         
-        // move monster
+        // Move monster
         for(int i=1; i<map.characters.length; i++){
             GameCharacter monster = map.characters[i];
             if(monster.getHealth()>0){
@@ -29,21 +29,23 @@ public class Game {
             }
         }
 
-        //win the game
+        //// Check if monsters are alive and judge if the player win the game
         boolean livingMonster=false;
         for(int i=1; i<map.characters.length; i++){
                 GameCharacter monster=map.characters[i];
                 if(monster.getHealth()>0){
+                    // Updates livingMonster flag if at least one monster is alive
                     livingMonster=true;
                     break;
                 }
         }
+        // If no living monsters are found
         if(!livingMonster){
             System.out.println("YOU HAVE WON!");
             return true;
         }
         
-        // player
+        // Player's turn
         GameCharacter player=map.characters[0];
         if(player.getHealth()>0){
             GameLogic.moveCharacter(input,map,player);
@@ -52,7 +54,7 @@ public class Game {
             return true;
         }
 
-        //print the health
+        //Print the health of player and monsters
         System.out.println();
         System.out.println("Health Player: " + player.getHealth());
         for(int i=1; i<map.characters.length; i++){

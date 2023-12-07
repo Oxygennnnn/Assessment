@@ -9,8 +9,8 @@ public class Player extends GameCharacter{
 	}
 
 	@Override
-	public
-	void hurtCharacter(GameCharacter character) {
+    // Overrides the abstract method in GameCharacter class
+	public void hurtCharacter(GameCharacter character) {
 		boolean defencesuccessfully=character.successfulDefense();
         if (!defencesuccessfully){
             int currentHealth=character.getHealth();
@@ -21,9 +21,10 @@ public class Player extends GameCharacter{
 	}
 
 	@Override
-	public
-	boolean successfulDefense() {
+    // Overrides the successfulDefense() method
+	public boolean successfulDefense() {
         Random random=new Random();
+        //Randomly generate an integer ranging from 0 to 9. Three of them have 30% chance to be picked.
         int randomInt=random.nextInt(10);
         if(randomInt<=2){
 			return true;
