@@ -37,7 +37,7 @@ public class Game {
             }
         }
 
-        //// Check if monsters are alive and judge if the player win the game
+        // Check if monsters are alive and judge if the player win the game
         boolean livingMonster=false;
         for(int i=1; i<map.characters.length; i++){
                 GameCharacter monster=map.characters[i];
