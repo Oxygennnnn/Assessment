@@ -16,8 +16,10 @@ public class Monster extends GameCharacter {
         if (!defendsuccessfully){
             int currentHealth=character.getHealth();
             character.setHealth(currentHealth-20);
+            System.out.println("!!HIT!! Monster successfully attacked Player");
         }else{
-            return;
+            System.out.println("!!MISS!! Player successfully defended attack from Monster");
+            return ;
         }
 	}
 

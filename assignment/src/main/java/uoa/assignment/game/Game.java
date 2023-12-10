@@ -20,12 +20,20 @@ public class Game {
     
     public boolean nextRound (String input) {
         
-        
-        // Move monster
+        //Player's turn
+        GameCharacter player=map.characters[0];
+        if(player.getHealth()>0){
+            System.out.println(player.sayName() + " is moving" + input);
+            GameLogic.moveCharacter(input,map,player);
+        }
+
+        // Monster's turn
         for(int i=1; i<map.characters.length; i++){
             GameCharacter monster = map.characters[i];
             if(monster.getHealth()>0){
-                GameLogic.moveCharacter(((Monster)monster).decideMove(),map,monster);
+                String move = ((Monster)monster).decideMove();
+                System.out.println(monster.sayName() + " is moving" + move);
+                GameLogic.moveCharacter(move,map,monster);
             }
         }
 
@@ -45,11 +53,8 @@ public class Game {
             return true;
         }
         
-        // Player's turn
-        GameCharacter player=map.characters[0];
-        if(player.getHealth()>0){
-            GameLogic.moveCharacter(input,map,player);
-        }else{
+        // If Player's health points equal to 0
+        if(map.characters[0].getHealth()==0){
             System.out.println("YOU HAVE DIED!");
             return true;
         }
